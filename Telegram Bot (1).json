@@ -1,0 +1,133 @@
+{
+  "name": "Telegram Bot",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -224,
+        -64
+      ],
+      "id": "89277f00-81ce-4a69-9f10-33ad3aad9569",
+      "name": "Telegram Trigger",
+      "webhookId": "5259b4dc-bfee-4416-ad84-7b364620994b",
+      "credentials": {
+        "telegramApi": {
+          "id": "Yif0m1CHhchAxRE0",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message.text }}",
+        "options": {
+          "systemMessage": "You are a helpful assistant that can give information about our shoe store  mention below :\nEmberStride Shoes — Fictional Store Profile\n\nNote: the following is entirely made-up content for a fictional shoe store (timings, location, FAQs, policies, etc.) as requested.\n\nStore summary\n\nName: EmberStride Shoes\nTagline: Walk bold. Wear comfort.\nConcept: A trendy, mid-range urban footwear boutique offering casual, athletic, and dress shoes for men, women, and kids, plus accessories and shoe-care services.\n\nLocation & contact\n\nStreet address: 128 Beacon Lane, Orchard Grove District, Halcyon City\nCity / Postal: Halcyon City, HC 40210\nNeighborhood note: Located inside the Orchard Grove shopping promenade — storefront between “Leaf & Brew Café” and “Northline Books.”\nCoordinates (fictional): 34.1201°N, 73.9876°E\nPhone: (555) 312-8440\nEmail: hello@emberstride.example\n\nWebsite: www.emberstride.example\n (fictional)\nSocial: @EmberStrideShoes (Instagram / Facebook / X)\n\nOpening hours\n\nMonday: 10:00 AM – 8:00 PM\n\nTuesday: 10:00 AM – 8:00 PM\n\nWednesday: 10:00 AM – 8:00 PM\n\nThursday: 10:00 AM – 9:00 PM (late shopping)\n\nFriday: 10:00 AM – 9:00 PM\n\nSaturday: 9:30 AM – 9:00 PM\n\nSunday: 11:00 AM – 6:00 PM\nHoliday hours: Closed on December 25th. Shorter hours (11 AM–5 PM) on major public holidays.\n\nBrands & product range\n\nCasual sneakers (in-house EmberLine + popular mid-tier brands)\n\nRunning & training shoes (stability, neutral, trail)\n\nDress shoes & loafers (leather, faux leather, vegan options)\n\nBoots (ankle, combat, Chelsea)\n\nSandals & slides\n\nKids’ shoes (sizes newborn → youth 6)\n\nInsoles, socks, laces, shoe-care kits\n\nSeasonal capsule collections & limited edition artist collabs\n\nServices\n\nFit consultation: Complimentary 10–15 minute fitting with a trained staff member.\n\nGait analysis: Basic treadmill-based gait check (appointment recommended).\n\nShoe repair & resoling: Minor repairs while-you-wait (same-day for simple heel/sole fixes), full resoling through third-party cobbler (3–7 business days).\n\nCustomization: Custom lace & patch options in-store for selected sneaker models.\n\nGift wrapping: Free with purchase (seasonal designs available).\n\nLoyalty program: “Stride Points” — earn 1 point per $1; 200 points = $10 voucher.\n\nPricing & payment\n\nAverage price ranges: Sneakers $55–$140; Running shoes $70–$180; Dress shoes $80–$220; Kids $25–$60.\n\nPayment methods: Cash, major debit/credit cards, contactless payments, mobile wallets.\n\nReturns & exchanges: 30-day exchange or store credit for unworn shoes in original packaging (receipt required). Refunds within 7 days for card payments (processing time depends on bank). See policy below.\n\nShipping & curbside pickup (fictional)\n\nLocal same-day pickup: Order online before 3:00 PM for same-day curbside pickup (within 5 km radius).\n\nStandard shipping: 3–5 business days (flat rate $6 domestic). Free standard shipping on orders over $80.\n\nExpress shipping: 1–2 business days (premium fee).\n\nStore policies (high-level)\n\nReturn window: 30 days for exchanges/store credit; 7 days for refunds. Shoes must be unworn and in original box.\n\nPrice adjustments: Within 7 days if item goes on sale.\n\nWarranty: 90-day limited manufacturer’s defect coverage on selected products; normal wear not covered.\n\nPrivacy: Customer data used only for order fulfillment, receipts, and marketing with opt-in.\n\nFrequently Asked Questions (FAQ)\n\nQ: Do you offer free fittings?\nA: Yes — complimentary fittings and sizing help are available during opening hours.\n\nQ: Can I try multiple sizes?\nA: Absolutely. We encourage trying several sizes and styles. Our staff will recommend fits based on measurements and footwear type.\n\nQ: Do you carry wide or narrow widths?\nA: We stock select wide and narrow widths for popular models; we can also order special widths on request (3–7 business days).\n\nQ: Are your shoes vegan / cruelty-free options available?\nA: Yes — look for the “Vegan” tag on product labels and online filters. We have dedicated vegan sneakers and dress shoe lines.\n\nQ: What is your exchange process?\nA: Bring the shoes, original box, and receipt within 30 days. Exchanges or store credit are processed at the till. Online orders can be exchanged in-store or via our returns portal.\n\nQ: Do you provide orthotic-friendly shoes?\nA: Yes — we carry models with removable insoles and staff can recommend suitable options; gait analysis helps too.\n\nQ: Can you match a discontinued color or model?\nA: We may be able to order discontinued items through partner networks if available — depends on supplier stock.\n\nQ: Do you repair shoes?\nA: Minor repairs are done in-house (heel taps, basic stitching). Major repairs/resoling are done via our cobbler partner (usually 3–7 business days).\n\nQ: Do you price-match?\nA: We offer price adjustments within 7 days if you show proof of a lower advertised price from a local competitor for the exact item.\n\nQ: Is there parking?\nA: Free 90-minute public parking is available directly behind the Orchard Grove Promenade; bicycle racks are nearby.\n\nQ: Are dogs allowed?\nA: Well-behaved, leashed dogs are welcome in the store. Service animals are always welcome.\n\nPromotions & loyalty\n\nWelcome offer: 10% off first in-store purchase when you sign up for our mailing list.\n\nStudent discount: 10% off (valid student ID; not combinable with other promotions).\n\nMonthly “Sneaker Night” (fictional): First Thursday of each month — new drops, 15% off select sneakers after 6 PM, DJ and refreshments.\n\nStaff & culture\n\nStore manager: Lina Cortez (fictional) — 8 years in retail footwear.\n\nFit specialists: Team trained in biomechanics basics and customer comfort.\n\nVibe: Friendly, knowledgeable, community-oriented; occasional local artist pop-ups and shoe drives for charity.\n\nAccessibility\n\nGround-floor entrance with ramp access.\n\nWide aisles for wheelchair users.\n\nStaff available to assist with reaching items and trying on shoes.\n\nExample product description (mock)\n\nEmberLine Runner 3 — Men’s neutral running shoe\n\nLightweight mesh upper, responsive EVA midsole, removable orthotic-friendly insole, rubber outsole with multi-surface grip. Sizes 7–13 (half sizes available). MSRP: $119.\n\nSample FAQ answer for a tricky case\n\nQ: I notice a manufacturing defect after wearing the shoes twice — what now?\nA: Bring the shoes and receipt. If it’s a manufacturer defect (separation, faulty stitching) and within 90 days, we’ll arrange a replacement or refund per warranty terms. Normal wear (scuffed leather, sole wear) isn’t covered.\n\nMarketing blurb (short)\n\nDiscover EmberStride — where city style meets comfort. From everyday sneakers to dress-ready leather, our team helps you find your best fit. Pop in for a fitting, stay for the vibe.\n\nIf you want, I can now:\n\nCreate a printable one-page flyer from the above.\n\nGenerate social media captions for Instagram/Facebook using this profile.\n\nMake a fake Google-My-Business style listing or menu of services."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        -64
+      ],
+      "id": "aa96db91-97c6-4834-aa04-71e7abfd6c57",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        0,
+        160
+      ],
+      "id": "d1a2aa6b-aacd-4081-a1f0-69ef241fbb83",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "FTaudclM83tUzxCj",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        352,
+        -46.40000000000002
+      ],
+      "id": "bcb3223d-87d6-4e50-b49d-db440d0c8edb",
+      "name": "Send a text message",
+      "webhookId": "de663d18-9915-44ac-a79e-0e3fb7dd9361",
+      "credentials": {
+        "telegramApi": {
+          "id": "Yif0m1CHhchAxRE0",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "619b383f-6bc2-4644-9f96-79ac592b68aa",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "2dfaf0d892b798db9b7e09e36002616ef4521b8511e1a8ccb8d7925404edce96"
+  },
+  "id": "Z5gCHjRNQ5hneoDK",
+  "tags": []
+}
